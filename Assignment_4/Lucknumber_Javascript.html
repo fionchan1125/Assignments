@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+  <title>KPOP VIEWS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+  <style type="text/css">
+  body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color:#FFB6C1;
+    background-color: #000000}
+  h1 {
+    font-family: 'Krona One', sans-serif;Helvetica, Geneva, Arial,
+          SunSans-Regular, sans-serif;
+    font-size: 66px;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 20px}
+  p {
+    padding-top: 10px
+  }
+  </style>
+</head>
+
+<body>
+
+<!-- Main content -->
+
+<h1>Guess Today's Lucky Number!</h1>
+
+<p>Please input a number you like.</p>
+
+<input id="numb">
+
+<button type="button" onclick="myFunction()">OK</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+    var x, text;
+
+    x = document.getElementById("numb").value;
+
+    if (isNaN(x) || x < 25 || x > 30) {
+        window.alert("Uh oh. It's 25-30.");
+    } else if (x!=26) {
+        window.alert("Almost! Try again!");
+    } else {
+        window.alert("Bingo! Good luck!")
+    }
+}
+</script>
+
+</body>
+</html>
